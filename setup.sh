@@ -46,7 +46,7 @@ pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 mkdir $DIR/../rttov13
 cd /tmp
-for file in `ls ./rttov13.1_part*.tra.gz` ; do tar -zxvf $file -C $DIR/../rttov13; done
+for file in `ls ./rttov13.1_part*.tar.gz` ; do tar -zxvf $file -C $DIR/../rttov13; done
 cd $DIR/../rttov13/build
 sed -i "40s/path-to-hdf-install/\/usr\/local\/envs\/hdf5/#" Makefile.local
 sed -i "45s/\#\ //#" Makefile.local
