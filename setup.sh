@@ -44,7 +44,6 @@ cd ..
 
 pip3 install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-cd ..
 mkdir $DIR/../rttov13
 cd /tmp
 for file in `ls ./rttov13.1_part*.tra.gz` ; do tar -zxvf $file -C $DIR/../rttov13; done
